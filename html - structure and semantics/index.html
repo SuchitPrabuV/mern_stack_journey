@@ -4,79 +4,87 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Suchit Prabu - Portfolio</title>
+        <link rel="stylesheet" href="../css3 - styling & box model/style.css">
     </head>
 
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <main>
             <section id="hero">
                 <h1> Suchit Prabu V</h1>
-                <p>I'm a Computer Science student who works on Machine Learning. Currently learning MERN stack development. My goal is to contribute something meaningful to the tech industry</p>
+                <p>I'm a Computer Science student who works on Machine Learning. Currently learning MERN stack development. <br>My goal is to contribute something meaningful to the tech industry</p>
             </section>
             <br>
             <section id="projects">
-                <article>
                 <h2>Projects</h2>
+                <article class="project-card">
                     <h3>Supply Demand Balancing System for MSME — TN-IMPACT TANCAM 2026</h3>
                     <p>Built a "Control Tower" web app that replaced manual MSME spreadsheet workflows with automated, real-time supply chain decision-making</p>
-                    <a href="https://github.com/SuchitPrabuV/msme-supply-demand">View Here</a>
+                    <a class ="view-button" href="https://github.com/SuchitPrabuV/msme-supply-demand">View Project</a>
                 </article>
                 <br>
-                <article>
+                <article class="project-card">
                     <h3>AccessTalk — Real-Time Indian Sign Language Interpreter</h3>
                     <p>Built a real-time system that converts Indian Sign Language (ISL) gestures into speech using a webcam</p>
                     <p>Implemented hand tracking with MediaPipe Hands and classified gestures using a Random Forest classifier</p>
-                    <a href = "https://github.com/SuchitPrabuV/AccessTalk"> View Here</a>
+                    <a class ="view-button" href = "https://github.com/SuchitPrabuV/AccessTalk"> View Project</a>
                 </article>
                 <br>
-                <article>
+                <article class="project-card">
                     <h3>Nunnmadhi — AI-Powered Hospital Triage System - Kanini X Pragyan Hackathon 2026</h3>
                     <p>Built an AI triage system that collects patient vitals and symptoms via a multilingual voice assistant (Tamil & English) and classifies patients into Low / Medium / High risk</p>
                 </article>
             </section>
-            <br>
+            
             <section id="skills">
                 <h2>Familiar Tech Stack</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>FastAPI</li>
-                    <li>Django</li>
-                    <li>OpenCV</li>
-                    <li>SQL</li>
-                    <li>Java</li>
-                    <li>C</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
+                    <ul class="skill-set">
+                        <li>Python</li>
+                        <li>FastAPI</li>
+                        <li>Django</li>
+                        <li>OpenCV</li>
+                        <li>SQL</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
             </section>
 
-            <hr>
             <section id="contact">
-                <h2>Contact</h2>
+                <h2>Let's Connect</h2>
+                    <p>
+                        Have a project, internship opportunity, or just want to connect?
+                        Feel free to reach out.
+                    </p>
                 <form>
-                    <label>Name</label>
-                    <input id="name" type="text" placeholder="Enter your name">
-                    <br><br>
-                    <label>Email</label>
-                    <input id="email" type="email" placeholder="Enter your email">
-                    <br><br>
-                    <label>Message</label>
-                    <textarea id="message" rows="6" cols="40" placeholder="Enter your message"></textarea>
-                    <br><br>
-                    <button>Submit</button>
-                    <br><br>
-                    <a href = "https://github.com/SuchitPrabuV" target="_blank" rel="noopener noreferrer">GitHub</a><br><br>
-                    <a href="https://www.linkedin.com/in/suchit-prabu-v-19613b2ba/" target="_blank" rel = "noopener noreferrer ">LinkedIn</a>
-                    <hr>
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input id="name" type="text" placeholder="Enter your name">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input id="email" type="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="messge">Message</label>
+                        <textarea id="message" placeholder="Enter your message"> </textarea>
+                    </div>
+
+                    <button class="submit-button">Submit</button>
+                    <div class="social-links"> 
+                        <a href = "https://github.com/SuchitPrabuV" target="_blank" rel="noopener noreferrer"> <img src="../css3 - styling & box model/images/github.svg" alt="GitHub"> </a>
+                        <a href="https://www.linkedin.com/in/suchit-prabu-v-19613b2ba/" target="_blank" rel = "noopener noreferrer "> <img src="../css3 - styling & box model/images/linkedin.webp" alt="LinkedIn"> </a>
+                    </div>
                 </form>
             </section>
         </main>
